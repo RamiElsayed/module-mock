@@ -1,4 +1,4 @@
-const FileIO = require('../fileIO');
+const FileIO = require('./fileIO');
 
 describe('FileIO', () => {
   describe('read', () => {
