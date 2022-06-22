@@ -28,6 +28,7 @@ describe('FileIO', () => {
   describe('write', () => {
     test('should call writeFileSync eith the expected arguments', () =>{
       fs.writeFileSync.mockReturnValue('success');
+      
       const result = fileIO.write('foo.text', 'This is a write mock');
 
       expect(result).toEqual('success');
