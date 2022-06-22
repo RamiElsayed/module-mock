@@ -1,15 +1,19 @@
-const FileIO = require('./fileIO');
+const FileIO = require("./fileIO");
 
 describe('FileIO', () => {
-  describe('read', () => {
-    it("should call fs.readFileSync with the passed in 'file' argument", () => {
-      // TODO: Your code here
-    });
-  });
+  describe('Initialize', () => {
+    test('should initialize new fileIO object', () => {
+      const fileIO = new FileIO();
 
-  describe('write', () => {
-    it("should call fs.writeFileSync with the passed in 'path' and 'data' arguments", () => {
-      // TODO: Your code here
-    });
+      expect(fileIO).toEqual({});
+      expect(fileIO).toBeInstanceOf(FileIO);
+    })
   });
+  describe('read', () =>  {
+    test('should call readFileSync with the expected arguments', () => {});
+  })
+  describe('write', () => {
+    test('should call writeFileSync eith the expected arguments', () =>{});
+    
+  })
 });
